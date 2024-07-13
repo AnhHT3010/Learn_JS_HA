@@ -41,3 +41,25 @@
 // Tính diện tích hình tròn, cho phép người dùng nhập bán kính, sau đó alert('Diện tích hình tròn là: ' + dien_tich)
 
 // Tính chỉ số BMI, cho phép người dùng nhập cân nặng (weight) và chiều cao (height), sau đó alert('Chỉ số BMI của bạn là: ' + bmi)
+//bài 1
+// let a = prompt("picknumber");
+// if (a % 2 == 1) {
+//   console.log("a là số lẻ");
+// }
+// if (a % 2 == 0) {
+//   console.log("a là số chẵn");
+// }
+
+//bài 2
+//let a = prompt("chọn bán kính");
+//let output = a * a * 3.14;
+//console.log(output);
+
+//bài 3
+// let a = prompt("chọn cân nặng");
+// if (a > 60) {
+//   console.log("mày béo vãi");
+// }
+// let b = prompt("chọn chiều cao của mày");
+// let output = a / (b * b);
+// console.log(output);
