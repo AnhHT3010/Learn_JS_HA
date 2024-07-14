@@ -10,20 +10,21 @@
 // }
 // number(r,h)
 // Bài 2
+function convertCtoF(c) {
+  let f = c * 1.8 + 32;
+  alert(f, "thôi m cút hộ tao");
+}
+
+function convertFtoC(f) {
+  let c = (f - 32) / 1.8;
+  alert(c, "thôi m cút hộ tao");
+}
 
 let c = prompt("nhiệt độ Celsius");
-function number(c) {
-  let f = c * 1.8 + 32;
-  console.log(f, "thôi m cút hộ tao");
-}
-number(c);
+convertCtoF(c);
 
 let f = prompt("nhiệt độ Fahrreneit");
-function nuber(f) {
-  let f = c * 1.8 + 32;
-  console.log(c, "thôi m cút hộ tao");
-}
-number(c);
+convertFtoC(f);
 // // CÁCH SỬ DỤNG HÀM
 // // function: là 1 hàm, thường được tái sử dụng nhiều lần
 // // function - tên hàm - () - nội dung hàm
