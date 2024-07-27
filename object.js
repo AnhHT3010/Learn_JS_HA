@@ -27,3 +27,21 @@
 // Cập nhật thuộc tính age của đối tượng person thành 30.
 // Thêm thuộc tính mới occupation với giá trị "Engineer".
 // In ra đối tượng person đã được cập nhật.
+
+// Bài 1
+
+const john_doe = {
+    fullname : "John Doe",
+    age: "25",
+    city : "New York",
+    bill: "60$"
+}
+console.log("Số tiền mày cần phải trả :", john_doe.bill)
+console.log("Tuổi :", john_doe.age +  " Tên :" ,john_doe.fullname  )
+
+john_doe.age ="30"
+john_doe.occupation = "enginneer"
+
+console.log ("Tên", john_doe.fullname + " Tuổi mới :", john_doe.age + " Nghề nghiệp :", john_doe.occupation)
+
+
