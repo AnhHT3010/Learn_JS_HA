@@ -22,17 +22,17 @@
 // 5. Cách khai báo
 // - function name() {}
 // - function name() {return value}
-let math = Number(prompt("Nhập điểm toán:"))
-let literature = Number(prompt("Nhập điểm văn:"))
-let english = Number(prompt("Nhập điểm anh:"))
-function avgMathAndLit(math, literature){
-    let result = math + literature
-    return result
-}
-avgMathAndLit(math, literature) // goi ham
+// let math = Number(prompt("Nhập điểm toán:"))
+// let literature = Number(prompt("Nhập điểm văn:"))
+// let english = Number(prompt("Nhập điểm anh:"))
+// function avgMathAndLit(math, literature){
+//     let result = math + literature
+//     return result
+// }
+// avgMathAndLit(math, literature) // goi ham
 
-const kq = (avgMathAndLit(math, literature) + english) / 3
-console.log("Kết quả sau khi tính toán: ",kq)
+// const kq = (avgMathAndLit(math, literature) + english) / 3
+// console.log("Kết quả sau khi tính toán: ",kq)
 
 // Xét học lực:
 // Tạo một hàm determineAcademicPerformance(kq) để xác định học lực dựa trên điểm trung bình:
@@ -45,13 +45,13 @@ console.log("Kết quả sau khi tính toán: ",kq)
 // 3 kiểu
 if(kq >= 9){
     console.log("Xuất sắc")
-}else if(kq >= 8 && kq < 9){
+}else if(kq >= 8){
     console.log("Giỏi")
 }
-else if (kq >=6.5 && kq < 8 ) {
+else if (kq >= 6.5) {
     console.log('Khá')
 }
-else if  (kq >= 5 && kq < 6.5) {
+else if  (kq >= 5) {
     console.log('Trung bình')
 }
 else if ( kq < 5) {
