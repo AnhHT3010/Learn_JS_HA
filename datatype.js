@@ -35,3 +35,4 @@ function tinhTong(a,b){
         console.log ('Trung bình nhỏ hơn 8')
     }
 }
+

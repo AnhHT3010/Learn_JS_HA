@@ -48,3 +48,12 @@ if(kq >= 9){
 }else if(kq >= 8 && kq < 9){
     console.log("Giỏi")
 }
+else if (kq >=6.5 && kq < 8 ) {
+    console.log('Khá')
+}
+else if  (kq >= 5 && kq < 6.5) {
+    console.log('Trung bình')
+}
+else if ( kq < 5) {
+    console.log ('Yếu')
+}
