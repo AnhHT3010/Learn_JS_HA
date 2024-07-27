@@ -30,18 +30,19 @@
 
 // Bài 1
 
-const john_doe = {
+const person = {
     fullname : "John Doe",
     age: "25",
     city : "New York",
     bill: "60$"
 }
-console.log("Số tiền mày cần phải trả :", john_doe.bill)
-console.log("Tuổi :", john_doe.age +  " Tên :" ,john_doe.fullname  )
+console.log("Số tiền mày cần phải trả :", person.bill)
+console.log("Tuổi :", person.age +  " Tên :" ,person.fullname  )
 
-john_doe.age ="30"
-john_doe.occupation = "enginneer"
+person.age ="30"
+person.occupation = "enginneer"
 
-console.log ("Tên", john_doe.fullname + " Tuổi mới :", john_doe.age + " Nghề nghiệp :", john_doe.occupation)
+// console.log ("Tên", john_doe.fullname + " Tuổi mới :", john_doe.age + " Nghề nghiệp :", john_doe.occupation)
+// console.log(`Họ tên của ${john_doe.fullname}, số tuổi là ${john_doe.age} tuổi, số tiền mày cần phải trả là ${john_doe.bill}`)
 
-
+console.log(person)
