@@ -16,14 +16,33 @@
 // in "Fizz" thay vì số đó, và với các số chia hết cho 5, in "Buzz".
 // Gợi ý: Sử dụng vòng lặp và các điều kiện kiểm tra.
 
-let i = 0;
-while (i < 100) {
-  i++;
-  if (i % 3 == 0) {
-    console.log("Fizz");
-  } else if (i % 5 == 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
-  }
+// let i = 0;
+// while (i < 100) {
+//   i++;
+//   if (i % 3 == 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 == 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 == 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 == 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+let a = Number(prompt("nhập số a"));
+let b = Number(prompt("nhập số b"));
+let x = -b / a;
+if (a == 0) {
+  console.log("phương trình vô nghiệm");
+} else {
+  console.log(x);
 }

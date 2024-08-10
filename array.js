@@ -14,4 +14,14 @@ const products = [
   true,
   [1, 2, 3, 4, 5, [123, 12, 1233]],
 ];
-const navigation = [];
+const navigation = [
+  "Tin Tức",
+  "Bóng đá",
+  "Ngoại Hạng Anh",
+  "Kinh Doanh",
+  "Giải trí",
+  "Sức khỏe",
+  "Hi tech",
+  "Thế giới",
+  "Thể thaos",
+];
