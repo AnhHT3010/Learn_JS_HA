@@ -38,15 +38,16 @@ console.log(students);
 // B1: Tìm sinh viên có điểm cao nhất.
 // B2: Tìm bạn thuộc lớp 10A có điểm cao nhất.
 // B3: In ra thông tin của bạn Bob.
-// for (let i = 0; i < students.length; i++) {
-//   if (students[i].name === "Bob") {
-//     console.log(students[i]);
-//   }
-// }
 const ban_1 = prompt("Nhap ten ban 1");
-const thong_tin_ban_1 = students.filter(function (students) {
-  return students.name === ban_1;
-});
-console.log(`Thông tin của bạn ${ban_1}`, thong_tin_ban_1[0].score);
+let thong_tin_ban_1 = null;
+for (let i = 0; i < students.length; i++) {
+  if (students[i].name === ban_1) {
+    thong_tin_ban_1 = students[i];
+  }
+}
+console.log(`Thông tin của bạn ${ban_1}`, thong_tin_ban_1.score);
+// const thong_tin_ban_1 = students.filter(function (students) {
+//   return students.name === ban_1;
+// });
 // B4: So sánh điểm của 2 bạn bằng cách nhập tên 2 bạn vào từ bàn phím.
 // B5: Nhập tên 2 bạn trong lớp và kiểm tra xem 2 bạn có cùng lớp không.
