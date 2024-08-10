@@ -15,3 +15,8 @@ console.log(`${number} là số chia hết cho 5`);
 // Đề bài: Viết một chương trình in các số từ 1 đến 100. Nhưng với các số chia hết cho 3,
 // in "Fizz" thay vì số đó, và với các số chia hết cho 5, in "Buzz".
 // Gợi ý: Sử dụng vòng lặp và các điều kiện kiểm tra.
+let i = 0;
+while (i < 100) {
+  i++;
+  console.log(i);
+}
