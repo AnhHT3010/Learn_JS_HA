@@ -34,20 +34,40 @@ const students = [
   { name: "David", class: "10B", score: 95 },
   { name: "Eve", class: "10A", score: 91 },
 ];
-console.log(students);
-// B1: Tìm sinh viên có điểm cao nhất.
-// B2: Tìm bạn thuộc lớp 10A có điểm cao nhất.
-// B3: In ra thông tin của bạn Bob.
-const ban_1 = prompt("Nhap ten ban 1");
-let thong_tin_ban_1 = null;
-for (let i = 0; i < students.length; i++) {
-  if (students[i].name === ban_1) {
-    thong_tin_ban_1 = students[i];
-  }
-}
-console.log(`Thông tin của bạn ${ban_1}`, thong_tin_ban_1.score);
+// console.log(students);
+// // B1: Tìm sinh viên có điểm cao nhất.
+// // B2: Tìm bạn thuộc lớp 10A có điểm cao nhất.
+// // B3: In ra thông tin của bạn Bob.
+// const ban_1 = prompt("Nhap ten ban 1");
+// let thong_tin_ban_1 = null;
+// for (let i = 0; i < students.length; i++) {
+//   if (students[i].name === ban_1) {
+//     thong_tin_ban_1 = students[i];
+//   }
+// }
+// console.log(`Thông tin của bạn ${ban_1}`, thong_tin_ban_1.score);
 // const thong_tin_ban_1 = students.filter(function (students) {
 //   return students.name === ban_1;
 // });
 // B4: So sánh điểm của 2 bạn bằng cách nhập tên 2 bạn vào từ bàn phím.
 // B5: Nhập tên 2 bạn trong lớp và kiểm tra xem 2 bạn có cùng lớp không.
+
+// B2: Tìm bạn thuộc lớp 10A có điểm cao nhất.
+// let Max = -99999999999999999999
+// let student = null
+// for (  i = 0 ; i < students.length ; i++){
+//   if (students[i].score > Max && students[i].class == "10A" ){
+//     Max = students[i].score;
+//     student = students[i].name 
+//   }
+// }
+// console.log(`ban ${student} co diem so cao nhat lop 10A la ${Max}`);
+
+// B3: In ra thông tin của bạn Bob.
+// for (let i = 0 ; i < students.length ; i++) {
+//   if (students[i].name == "Bob" ){
+//     console.log(students[i])
+//   }
+// }
+
+//B4 
