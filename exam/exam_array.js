@@ -49,7 +49,6 @@ const students = [
 // const thong_tin_ban_1 = students.filter(function (students) {
 //   return students.name === ban_1;
 // });
-// B4: So sánh điểm của 2 bạn bằng cách nhập tên 2 bạn vào từ bàn phím.
 // B5: Nhập tên 2 bạn trong lớp và kiểm tra xem 2 bạn có cùng lớp không.
 
 // B2: Tìm bạn thuộc lớp 10A có điểm cao nhất.
@@ -58,7 +57,7 @@ const students = [
 // for (  i = 0 ; i < students.length ; i++){
 //   if (students[i].score > Max && students[i].class == "10A" ){
 //     Max = students[i].score;
-//     student = students[i].name 
+//     student = students[i].name
 //   }
 // }
 // console.log(`ban ${student} co diem so cao nhat lop 10A la ${Max}`);
@@ -70,4 +69,4 @@ const students = [
 //   }
 // }
 
-//B4 
+//B4: So sánh điểm của 2 bạn bằng cách nhập tên 2 bạn vào từ bàn phím.
