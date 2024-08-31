@@ -54,7 +54,9 @@ form.addEventListener("submit", function (e) {
   console.log("username", userName.value);
   toast({
     title: "Thông báo ✅✅✅",
-    message: `${userName.value} đã đăng ký thành công!`,
+    message: `${userName.value} đã đăng ký thành công!
+    Mật khẩu: ${}
+    Mật khẩu xác nhận của bạn là: ${}`,
     type: "success",
     duration: 5000,
   });
