@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="toast"></div>
+    <div class="container">
+      <div class="form-container">
+        <h2>Đăng ký</h2>
+        <form id="registerForm">
+          <ul id="registerError"></ul>
+          <div>
+            <label for="registerUsername">Tên đăng nhập</label>
+            <input type="text" id="registerUsername" />
+          </div>
+          <div>
+            <label for="registerPassword">Mật khẩu</label>
+            <input type="password" id="registerPassword" />
+          </div>
+          <div>
+            <label for="registerConfirmPassword">Xác nhận mật khẩu</label>
+            <input type="password" id="registerConfirmPassword" />
+          </div>
+          <button type="submit">Đăng ký</button>
+          <a class="link" href="login.html">Đăng nhập</a>
+        </form>
+      </div>
+    </div>
+    <script src="./register.js"></script>
+  </body>
+</html>
