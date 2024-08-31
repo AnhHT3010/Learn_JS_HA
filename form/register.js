@@ -46,6 +46,8 @@ function toast({ title = "", message = "", type = "info", duration = 3000 }) {
 }
 
 const userName = document.getElementById("registerUsername");
+const password = document.getElementById("registerPassword");
+const password_confirm = document.getElementById("registerConfirmPassword");
 
 const form = document.getElementById("registerForm");
 
@@ -55,8 +57,8 @@ form.addEventListener("submit", function (e) {
   toast({
     title: "Thông báo ✅✅✅",
     message: `${userName.value} đã đăng ký thành công!
-    Mật khẩu: ${}
-    Mật khẩu xác nhận của bạn là: ${}`,
+    Mật khẩu: ${password.value} đã đăng ký thành công
+    Mật khẩu xác nhận của bạn là: ${password_confirm .value} đã đăng ký thành công` ,
     type: "success",
     duration: 5000,
   });
