@@ -75,17 +75,34 @@ form.addEventListener("submit", function (e) {
   if (password_confirm.value !== password.value) {
     errorPasswordConfirm.innerText = "Mật khẩu không trùng khớp";
   }
-  if (errorName.innerText !== "" || errorPassword.innerText !== ""||errorPasswordConfirm.innerText!=="" ) {
+  if (
+    errorName.innerText !== "" ||
+    errorPassword.innerText !== "" ||
+    errorPasswordConfirm.innerText !== ""
+  ) {
     return;
   }
-  console.log("username", userName.value);
+  // lấy thông tin từ localStorage
+  let data = localStorage.getItem("data_user");
+  // Lưu ý: Khi lấy dữ liệu từ localStorage về thì nó đang ở dạng chuỗi
+  console.log("Lúc lấy trên browser về:", data);
+  data = data ? JSON.parse(data) : [];
+  console.log("Sau khi chuyển dạng dữ liệu về ngôn ngữ lập trình JS:", data);
+  console.log(data);
+  data.push({
+    username: userName.value,
+    password: password.value,
+  });
+  // lưu thông tin người dùng vào mảng userDB
+  // set vào localStorage ( cái tk localStorage)
+  localStorage.setItem("data_user", JSON.stringify(data)); // convert về chuỗi để browser hiểu
   toast({
     title: "Thông báo ✅✅✅",
-    message: `${userName.value} đã đăng ký thành công!
-    Mật khẩu: ${password.value} đã đăng ký thành công
-    Mật khẩu xác nhận của bạn là: ${password_confirm.value} đã đăng ký thành công`,
+    message: `${userName.value} đã đăng ký thành công!`,
     type: "success",
     duration: 5000,
   });
-  console.dir(userName);
+  userName.value = "";
+  password.value = "";
+  password_confirm.value = "";
 });
