@@ -240,3 +240,11 @@ form > a {
   font-style: italic;
   font-size: 16px;
 }
+
+#errorName,
+#errorPassword,
+#errorConfirmPassword {
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+}

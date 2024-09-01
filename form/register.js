@@ -49,16 +49,37 @@ const userName = document.getElementById("registerUsername");
 const password = document.getElementById("registerPassword");
 const password_confirm = document.getElementById("registerConfirmPassword");
 
+const errorName = document.getElementById("errorName");
+const errorPassword = document.getElementById("errorPassword");
+const errorPasswordConfirm = document.getElementById("errorPasswordConfirm");
+
 const form = document.getElementById("registerForm");
+
+// validate form: xử lý ngoại lệ khi người dùng nhập sai
+// username có ít nhất 3 kí tự
+// password không bỏ trống
+// password_confirm phải trùng với password
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+  errorName.innerText = "";
+  errorPassword.innerText = "";
+  // bắt lỗi khi người dùng nhập sai
+  if (userName.value.length < 3) {
+    errorName.innerText = "Tên đăng nhập phải có ít nhất 3 kí tự";
+  }
+  if (password.value.length === 0) {
+    errorPassword.innerText = "Mật khẩu không được để trống";
+  }
+  if (errorName.innerText !== "" || errorPassword.innerText !== "") {
+    return;
+  }
   console.log("username", userName.value);
   toast({
     title: "Thông báo ✅✅✅",
     message: `${userName.value} đã đăng ký thành công!
     Mật khẩu: ${password.value} đã đăng ký thành công
-    Mật khẩu xác nhận của bạn là: ${password_confirm .value} đã đăng ký thành công` ,
+    Mật khẩu xác nhận của bạn là: ${password_confirm.value} đã đăng ký thành công`,
     type: "success",
     duration: 5000,
   });
