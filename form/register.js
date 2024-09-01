@@ -64,6 +64,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   errorName.innerText = "";
   errorPassword.innerText = "";
+  errorPasswordConfirm.innerText = "";
   // bắt lỗi khi người dùng nhập sai
   if (userName.value.length < 3) {
     errorName.innerText = "Tên đăng nhập phải có ít nhất 3 kí tự";
@@ -71,7 +72,10 @@ form.addEventListener("submit", function (e) {
   if (password.value.length === 0) {
     errorPassword.innerText = "Mật khẩu không được để trống";
   }
-  if (errorName.innerText !== "" || errorPassword.innerText !== "") {
+  if (password_confirm.value !== password.value) {
+    errorPasswordConfirm.innerText = "Mật khẩu không trùng khớp";
+  }
+  if (errorName.innerText !== "" || errorPassword.innerText !== ""||errorPasswordConfirm.innerText!=="" ) {
     return;
   }
   console.log("username", userName.value);
