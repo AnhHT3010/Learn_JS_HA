@@ -80,23 +80,23 @@ form.addEventListener("submit", function (e) {
     errorPassword.innerText !== "" ||
     errorPasswordConfirm.innerText !== ""
   ) {
-    return;
+    return; // bắt người dùng nhập lại 
   }
   // lấy thông tin từ localStorage
-  let data = localStorage.getItem("data_user");
-  // Lưu ý: Khi lấy dữ liệu từ localStorage về thì nó đang ở dạng chuỗi
-  console.log("Lúc lấy trên browser về:", data);
-  data = data ? JSON.parse(data) : [];
-  console.log("Sau khi chuyển dạng dữ liệu về ngôn ngữ lập trình JS:", data);
-  console.log(data);
+  let data = localStorage.getItem("data_user"); // chứa những dữ liệu mà người dùng nhập
+  // Lưu ý: Khi lấy dữ liệu từ localStorage về thì nó đang ở dạng chuỗi 
+  console.log("Lúc lấy trên browser về:", data); // in ra những dữ liệu application 
+  data = data ? JSON.parse(data) : []; // nếu như data có nó sẽ là JSON.prase(data) còn nếu không có data thì sẽ là rỗng
+  console.log("Sau khi chuyển dạng dữ liệu về ngôn ngữ lập trình JS:", data); // tạo ra để có thể mình nhìn và kiểm tra
+  console.log(data); // same với dòng 90
   data.push({
     username: userName.value,
     password: password.value,
-  });
-  // lưu thông tin người dùng vào mảng userDB
+  }); // thêm người dùng mới của mình
+  // lưu thông tin người dùng vào mảng userData
   // set vào localStorage ( cái tk localStorage)
   localStorage.setItem("data_user", JSON.stringify(data)); // convert về chuỗi để browser hiểu
-  toast({
+  toast({ // bật thông báo ra thì dùng dòng lệnh toast 
     title: "Thông báo ✅✅✅",
     message: `${userName.value} đã đăng ký thành công!`,
     type: "success",
@@ -104,5 +104,5 @@ form.addEventListener("submit", function (e) {
   });
   userName.value = "";
   password.value = "";
-  password_confirm.value = "";
+  password_confirm.value = ""; // reset lại value của tất cả cái form
 });

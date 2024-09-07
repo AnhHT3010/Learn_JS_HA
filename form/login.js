@@ -57,17 +57,49 @@ const form = document.getElementById("loginForm");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   // Đăng nhập thành công
-  toast({
-    title: "Thông báo ✅✅✅",
-    message: `${userName.value} đã đăng ký thành công!`,
-    type: "success",
-    duration: 5000,
-  });
-  // Đăng nhập thất bại
-  toast({
-    title: "Thông báo ❌❌❌",
-    message: `Tên đăng nhập hoặc mật khẩu không đúng!`,
-    type: "error",
-    duration: 1000,
-  });
+  data = localStorage.getItem("data_user");
+  data = data ? JSON.parse(data) : [];
+  console.log(data)
+  userName = document.getElementById("loginUsername");
+  password = document.getElementById("loginPassword");
+  console.log(userName.value)
+  console.log(password.value)
+  let check = false
+  for (let i = 0 ; i < data.length ; i++) {
+    if (data[i].username == userName.value && data[i].password== password.value ) {
+      check = true
+      toast({
+        title: "Thông báo ✅✅✅",
+        message: `${userName.value} đã đăng ký thành công!`,
+        type: "success",
+        duration: 5000,
+      }); 
+      break
+    }
+    console.log(data[i].username, userName.value )
+    console.log(data[i].password,password.value)
+  }
+  if (check == false) {
+      toast({
+        title: "Thông báo ❌❌❌",
+        message: `Tên đăng nhập hoặc mật khẩu không đúng!`,
+        type: "error",
+        duration: 1000,
+      });
+  }
+  
+  // toast({
+  //   title: "Thông báo ✅✅✅",
+  //   message: `${userName.value} đã đăng ký thành công!`,
+  //   type: "success",
+  //   duration: 5000,
+  // });
+  // // Đăng nhập thất bại
+  // toast({
+  //   title: "Thông báo ❌❌❌",
+  //   message: `Tên đăng nhập hoặc mật khẩu không đúng!`,
+  //   type: "error",fr
+  //   duration: 1000,
+  // });
 });
+localStorage
