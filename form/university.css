@@ -43,10 +43,12 @@ main {
   border-radius: 20px;
 }
 
-#wrap-university {
+#wrap-university,
+#wrap-subject {
   width: 100%;
 }
-#wrap-university h2 {
+#wrap-university h2,
+#wrap-subject h2 {
   margin: 5rem 0;
   font-size: 2.25rem;
   color: var(--main-txt);
@@ -54,7 +56,8 @@ main {
   text-align: center;
 }
 
-#list-university {
+#list-university,
+#list-subject {
   width: 100%;
   display: flex;
   gap: 20px;
@@ -73,6 +76,11 @@ main {
 
 .university:hover {
   margin-top: -20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-txt);
 }
 
 .wrap-img {

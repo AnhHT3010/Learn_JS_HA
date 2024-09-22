@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./university.css" />
+  </head>
+  <body>
+    <main>
+      <div id="search">
+        <input
+          id="search-subject"
+          type="text"
+          placeholder="Search a document"
+        />
+        <button>🔍</button>
+      </div>
+      <div id="wrap-subject">
+        <div id="filter">
+          <p>Filter By</p>
+          <div class="major">
+            <div>
+              <input type="checkbox" id="vietnamese" />
+              <label for="vietnamese">Hệ tiếng việt</label>
+            </div>
+            <div>
+              <input type="checkbox" id="english" />
+              <label for="english">Hệ tiếng anh</label>
+            </div>
+          </div>
+          <button>Apply</button>
+        </div>
+        <div id="list-subject"></div>
+      </div>
+    </main>
+  </body>
+</html>
