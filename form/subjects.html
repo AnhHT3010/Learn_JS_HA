@@ -20,21 +20,25 @@
       <div id="wrap-subject">
         <div id="filter">
           <h2>Filter By</h2>
-          <div class="major">
-            <p>Major</p>
-            <div class="tiengviet">
-              <input type="checkbox" id="vietnamese" />
-              <label for="vietnamese">Hệ tiếng việt</label>
+          <form id="search-filter" action="">
+            <div class="major">
+              <p>Major</p>
+              <div class="tiengviet">
+                <input type="checkbox" id="vietnamese" />
+                <label for="vietnamese">Hệ tiếng việt</label>
+              </div>
+              <div>
+                <input type="checkbox" id="english" />
+                <label for="english">Hệ tiếng anh</label>
+              </div>
             </div>
-            <div>
-              <input type="checkbox" id="english" />
-              <label for="english">Hệ tiếng anh</label>
-            </div>
-          </div>
-          <button class="apply">Apply</button>
+            <button type="submit" class="apply">Apply</button>
+          </form>
         </div>
         <div id="list-subject"></div>
       </div>
     </main>
+    <script type="module" src="./data-subject.js"></script>
+    <script type="module" src="./subject.js"></script>
   </body>
 </html>

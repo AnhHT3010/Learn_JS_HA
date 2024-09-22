@@ -64,8 +64,10 @@ main {
   flex-wrap: wrap;
 }
 
-.university {
+.university,
+.subject {
   cursor: pointer;
+  height: auto;
   width: calc((100% / 4) - 40px);
   border-radius: 35px;
   padding: 20px;

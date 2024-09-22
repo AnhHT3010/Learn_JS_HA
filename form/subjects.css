@@ -5,31 +5,48 @@
 #wrap-subject {
   display: flex;
   flex-direction: row;
-  margin-top: 5%;
+  padding: 10%;
 }
 
 #filter {
   width: 20%;
 }
 
-#list-subject {
-  
-}
-.major > p{
+.major > p {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  color: #032482 ;
+  color: #032482;
 }
-.major{
+.major label {
+  font-weight: normal;
+}
+.major {
   display: flex;
   gap: 8px;
+  font-weight: bold;
   flex-direction: column;
 }
 .apply {
   padding: 8px 32px 8px 32px;
-  color:  white;
+  color: white;
   background-color: #032482;
   border-radius: 8px;
   border: none;
   margin-top: 16px;
+}
+
+.subject .wrap-img {
+  width: 50px;
+}
+
+.subject .intro {
+  align-items: center;
+}
+
+.subject .shortName {
+  margin-top: 15%;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #032482;
 }
