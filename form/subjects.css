@@ -1,4 +1,17 @@
-
 #wrap-subject h2 {
-    text-align: left;
-  }
+  text-align: left;
+  margin: 10px 0;
+}
+#wrap-subject {
+  display: flex;
+  flex-direction: row;
+}
+
+#filter {
+  width: 20%;
+  background-color: red;
+}
+
+#list-subject {
+  background-color: pink;
+}
